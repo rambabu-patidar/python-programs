@@ -20,8 +20,8 @@ else:
 mySet.add(100)
 print(mySet)
 
-# To add any iterable in to a set use update() method
 
+# To add any iterable in to a set use update() method
 anotherSet = {101, 102, 103, 104}
 anotherList = ["Indore", "New York", "Macau", "Amsterdam"]
 mySet.update(anotherSet)
@@ -30,7 +30,7 @@ print(mySet)
 
 # _________________REMOVE ITEM ____________
 # To remove item in set use remove(itemName) or discard(itemName) methods
-# 
+ 
 # difference between two is that remove will give error it itemName item doesn't exist
 # and discard(itemName) will not produce any error
 
