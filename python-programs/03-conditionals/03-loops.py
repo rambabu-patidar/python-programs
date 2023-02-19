@@ -62,7 +62,49 @@ else:
 
 
 # we can have nested for loops
+for row in range(5):
+    print(str(row) + "->", end=" ")
+    for col in range(5):
+        print(col, end=" ")
+    print();
+print()
+
 # if for body is empty use "pass" keyword
+for number in range(10):
+    pass
+else:
+    print("For loop executed")
 
 
 #________________________WHILE LOOP_______________________
+#Normal while loop
+i = 1
+while i <= 10:
+    print(i, end=" ")
+    i+= 1
+print()
+
+# break and continue statement works same in while loop
+
+# while loop also has a else statement that execute after the loop finished successfully
+# note that if you break out of the loop then else block of while loop will not run.
+i = 1
+while i <= 10:
+    print(i, end=" ")
+    i+= 1
+else:
+    print()
+    print("While loop ran successfully")
+
+
+# using break inside while
+i = 1
+while i <= 10:
+    if i == 5:break # single line to execute so use if this version
+    print(i, end=" ")
+    i+= 1
+else:
+    print("While broke out at 5") # This will not execute as we used break in while loop
+
+
+# NOTE: Like many other programming language we don't have DO WHILE loop in python.
