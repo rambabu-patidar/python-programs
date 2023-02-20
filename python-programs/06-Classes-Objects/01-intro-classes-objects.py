@@ -1,5 +1,5 @@
 # Python is OOPs(object oriented programming) based language
-# Everythin in Python is object that has properties(variable) and methods(function)
+# Everything in Python is object that has properties(variable) and methods(function)
 # In general variable inside classes are called properties and
 # as you can guess general functions inside class are called methods.
 # a class is a blueprint for real world project.
@@ -21,7 +21,7 @@ humanObj.humanHands() # accessing the method
 
 # This was the simplest form of class and object but we are using the hardcoded
 # values of hand and this is not reusable so we need some way to initialize the
-# values. That's why we do have __init__ method
+# values. That's why we do have __init__ method (it is same as the constructor we have in other programming languages)
 
 class Person:
     def __init__(self, name, age):
@@ -40,9 +40,9 @@ print(me.age)
 # Note: The __init__() function is called automatically every time the
 # class is being used to create a new object.
 
-print(me.__str__()) # Default is : <__main__.Person object at 0x000002CDA0551D30>
+print(me.__str__()) # Returns the object. Default is : <__main__.Person object at 0x000002CDA0551D30>
 # But we can set how we want to see it.
-# adding __str__() method in Person class
+# adding __str__() method in Person class. See that method now.
 
 print(me) # this is same as we call __str__() method
 print(me.__str__()) # because internally print is calling __str__() method
@@ -50,7 +50,7 @@ print(me.__str__()) # because internally print is calling __str__() method
 
 # IMPORTANT
 # You might be thinking is that what is "self"
-# The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.
+# The self parameter is a reference to the current instance(object) of the class, and is used to access variables that belong to the class.
 # It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class
 class MyClass:
     n = 100 # we write varible outside of __init__() method which we don't want to initialize every time and is same for all object of that class.
