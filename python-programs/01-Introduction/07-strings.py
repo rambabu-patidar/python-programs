@@ -1,5 +1,7 @@
+# Single quotes vs Double quotes
 # 'hello' is the same as "hello".
- # breaks were inserted as it is like <pre> tag in HTML
+
+# breaks were inserted as it is like <pre> tag in HTML
 multiStr = """This is a multi
             line string
             and we can write it 
@@ -10,7 +12,7 @@ print(multiStr)
 # indexing access is allowed so array like behaviour
 # but strings are immutable you can't modify string
 name = "Kizza"
-print(name[0]) # legal
+print(name[0])  # legal
 # name[0] = "P"  # illegel
 
 for char in name:
@@ -18,7 +20,7 @@ for char in name:
 
 
 # length of string
-print(len(name)) # 5
+print(len(name))  # 5
 
 
 # check something in string
@@ -39,18 +41,26 @@ else:
 # return range of character in string
 # slicing
 myName = "Rambabu Patidar"
-print(myName[8:15]) # [8th, 15th) "Patidar"
-print(myName[:8]) # Rambabu
-print(myName[0:]) # Rambabu Patidar
-# last char is -1 index 
-print(myName[-7:]) # Patidar 
-print(myName[-7:-3])
+print(myName[8:15])  # [8th, 15th) "Patidar"
 
-#modify strings
+print(myName[:8])  # Rambabu
+
+print(myName[0:])  # Rambabu Patidar
+
+# last char is -1 index
+print(myName[-7:])  # Patidar
+
+print(myName[-7:-3])  # Pati
+
+
+# modify strings
 print(myName.upper())
 print(myName.lower())
-print(myName.strip()) # remove white space from start and end
-print(myName.split(" "))
+print(myName.strip())  # remove white space from start and end
+print(
+    myName.split(" ")
+)  # Return a list of the substrings in the string, using sep as the separator string.
+# if not separator is provided then whitespace is considered as default
 
 # concat
 print("Rambabu " + " " + "Patidar")
@@ -61,6 +71,10 @@ print("Rambabu " + " " + "Patidar")
 # we can't combine string and number
 num = 100
 # ss = "this is hundred" + num # illegal
+
+# to concatinate use typecast integer to string
+ss = "this number is hundred" + str(num)
+
 
 # use Format
 ss = "This is {}"
@@ -73,6 +87,9 @@ print(myString.format("Rambabu", 21))
 # also we can index
 myString2 = "my name is {1} and I am {0}"
 print(myString2.format(21, "Rambabu"))
+
+# we can use keyword arguments
+myString3 = "my name is {name} and I am {age}".format(name="Rambabu", age=23)
 
 # we can use escape sequence for eg
 print("My name is \n Rambabu Patidar \t.")

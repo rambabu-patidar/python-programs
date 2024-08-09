@@ -1,28 +1,28 @@
 # Arithimatic Oparator
-# + 
-# - 
-# /(exact division) 
-# * 
-# % 
-# **(pow) 
-# //(floor division)
+# +
+# -
+# /(exact division)
+# *
+# %
+# **(pow)
+# //(floor division) # IMP: for negative number it it moves away from origin. see below
 
 # Assingnment operator
 # = (assign)
-# += 
-# -= 
-# /= 
-# *= 
-# %= 
-# **= 
-# &= 
-# |= 
+# +=
+# -=
+# /=
+# *=
+# %=
+# **=
+# &=
+# |=
 # ^=
-# >>= 
+# >>=
 # <<=
 
 
-#Comparision Operator
+# Comparision Operator
 # ==
 # !=
 # >
@@ -32,13 +32,13 @@
 
 
 # logical Operators
-# and 
+# and
 # or
 # not
 
 
 # membership operator
-# in 
+# in
 # not in
 
 
@@ -52,3 +52,9 @@
 
 
 # See the table of operator precedence of python and associativity also
+
+
+result = -7 // 2
+print(result)  # expected : -3, Actual : -4
+
+# hence ues the python math library that is next topic
