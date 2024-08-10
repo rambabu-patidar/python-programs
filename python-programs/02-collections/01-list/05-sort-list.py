@@ -1,8 +1,8 @@
-# sort() method 
-# if given string it sort lexicographically 
+# sort() method
+# if given string it sort lexicographically
 # if given number it sort in ascending order
 
-nums = [19, 23, 12, 54, 75,43]
+nums = [19, 23, 12, 54, 75, 43]
 nums.sort()
 print(nums)
 
@@ -24,6 +24,7 @@ print(fruits)
 
 
 # Case sensative and keeps Capital letter ahead of small letters
+# you can think like Capital letter in ASCII comes before small case letters hence capital first.
 veggies = ["carrot", "Corrinder", "Raddish", "Methi"]
 veggies.sort()
 print(veggies)
@@ -33,17 +34,19 @@ print(veggies)
 def myFunc(n):
     return n - 10
 
+
 nums2 = [100, 80, 70, 90, 20, 50]
-nums2.sort(key= myFunc) # myFunc will return number and sort will sort it by smallest number first
+nums2.sort(
+    key=myFunc
+)  # myFunc will return number and sort will sort it by smallest number first
 print(nums2)
 
 
 # pass Inbuild function to key
-veggies.sort(key= str.lower)
+veggies.sort(key=str.lower)
 print(veggies)
 
 # note the last inbuilt function will work for sorting and will not modify the collection
-
 
 
 # Reverse

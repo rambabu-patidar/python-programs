@@ -1,5 +1,9 @@
+# Tuple is indexed, unchangeble, and allow duplicates.
+
+
 # When we create a tuple, we normally assign values to it.
 # This is called "packing" a tuple
+
 
 myTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 
@@ -10,8 +14,9 @@ print(a, b, c, d, e, f, g, h, i)
 
 # also
 (a, b, *restAll) = myTuple
-print(a, b, restAll) # restAll will be a list
+print(a, b, restAll)  # restAll will be a list
 
-# also 
+# keep first value in a, rest in accomodateInMiddle variable except the last one, which will
+# go in c variable.
 (a, *accomodateInMiddle, c) = myTuple
 print(a, accomodateInMiddle, c)

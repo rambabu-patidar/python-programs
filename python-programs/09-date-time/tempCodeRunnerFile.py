@@ -1,4 +1,3 @@
+import datetime
 
-
-print(date.year)
-print(date.month)
+print(datetime.datetime.now())

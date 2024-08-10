@@ -1,8 +1,9 @@
-import greet 
-import person 
+import greet
+import person
 
-import platform # built-in module in python
-# we can import wither another name that is alias to the module
+import platform  # built-in module in python
+
+# we can import with another name that is alias to the module
 # import greet as greetModule
 
 # we can import a part of the module also without importing whole module
@@ -12,7 +13,7 @@ from utilityFile import greetAll, myDict, myList
 
 greet.greeting("Rambabu Patidar")
 
-# creating object 
+# creating object
 myFriend = person.Person("Balram Patidar")
 
 print(myFriend.name)
@@ -21,10 +22,10 @@ print(myFriend.name)
 print(person.myName)
 
 # using built-in method
-print(platform.system()) # windows.
+print(platform.system())  # windows.
 
 # to list all the function and variable in particular module use dir() method
-print(dir(person)) # return list of all stuff.
+print(dir(person))  # return list of all stuff.
 
 # using some part of utility module
 # note that we now don't have to use the class name in front of it

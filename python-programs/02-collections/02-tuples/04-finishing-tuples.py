@@ -6,8 +6,8 @@
 # one thing is that we can multiply tuple to increase its length by xNumber of times
 
 myTuple = (1, 2, 3)
-twiseTuple = myTuple*2
-thriceTuple = myTuple*3
+twiseTuple = myTuple * 2
+thriceTuple = myTuple * 3
 
 
 print(myTuple)

@@ -9,5 +9,6 @@ print(len(mySet)) # because 1 and True are same length is 1 less than it should 
 print(type(mySet))
 
 # set Constructor for creating set from other collections 
-mySet2 = set((100, 200, 300, 400, 500)) # double braces are important
+mySet2 = set((100, 200, 300, 400, 500)) # double braces are important, because constructor needs
+                                            # an iterable.
 print(mySet2)

@@ -2,7 +2,7 @@
 # Everything in Python is object that has properties(variable) and methods(function)
 # In general variable inside classes are called properties and
 # as you can guess general functions inside class are called methods.
-# a class is a blueprint for real world project.
+# a class is a blueprint for real world object.
 
 
 class Human:
@@ -30,7 +30,9 @@ class Person:
 
     # This method is added later don't worry I will point out when I will discuss this.
     def __str__(self):
+        # I want to see the object like this.
         return f"{self.name}({self.age})"
+
 # creating object of Person
 me = Person("Rambabu", 21)
 
@@ -40,9 +42,10 @@ print(me.age)
 # Note: The __init__() function is called automatically every time the
 # class is being used to create a new object.
 
-print(me.__str__()) # Returns the object. Default is : <__main__.Person object at 0x000002CDA0551D30>
-# But we can set how we want to see it.
-# adding __str__() method in Person class. See that method now.
+print(me.__str__()) # __str__ is a built in method and returns the object in string form. 
+                    # By default it return this -> : <__main__.Person object at 0x000002CDA0551D30>
+                    # But we can override this method to return anything we want.
+                    # adding __str__() method in Person class. See that method now.
 
 print(me) # this is same as we call __str__() method
 print(me.__str__()) # because internally print is calling __str__() method
@@ -50,10 +53,12 @@ print(me.__str__()) # because internally print is calling __str__() method
 
 # IMPORTANT
 # You might be thinking is that what is "self"
+# self is automatically passed to all the method you don't need to call it explicitly.
 # The self parameter is a reference to the current instance(object) of the class, and is used to access variables that belong to the class.
 # It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class
 class MyClass:
-    n = 100 # we write varible outside of __init__() method which we don't want to initialize every time and is same for all object of that class.
+    n = 100 # we write varible outside of __init__() method which we don't want to initialize every time and is same for all object of that class. Similary to static variable in c++.
+            # hence this will be created only once when program starts and will be used for all the instance of this class and will get destroyed when program ends
     def __init__(replaceSelf, standard):
         replaceSelf.standard = standard
 
@@ -96,7 +101,7 @@ class Olympics:
 a = 100
 # myString = "The number is:" + a  # invalid we can't add number with string untill we convert it to string
 
-# so we use format() method
+# so we use format() method OR you should first typecast the intger to string.
 myString = "The number is: {0}"
 myFormattedString = myString.format(a)
 print(myFormattedString)
